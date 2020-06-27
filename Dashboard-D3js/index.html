@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>USA BIRTHS DASHBOARD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='./jquery/jquery.js'></script>
+    <script src='./js/bootstrap.js'></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+</head>
+
+<body class="bg-dark">
+    <header>
+        <h6 class="display-4 text-center">USA DATA-ANALYSIS REPORT</h6>
+        <p class="container">
+            This Report was derived from data collected from 2000 to 2014. This Data was collected on each day of the month
+            hence it is a very precise data for that Mattter. The births as shown in the table below,the day of the week in arange of
+            1 to 7 was also recorded. Through this data,the births of USA are well analysed and achieve a very accurate stand of births in The US.
+        </p>
+        <div class='container'>
+            <h6 class="text-center" style="color: rgb(200, 224, 211);">
+                <ul>Below is A Table showing part of the data analysed.</ul>
+            </h6>
+            <table class="table-bordered col-7 mx-auto">
+                <thead class="text-center bg-light" style="color: teal;">
+                    <tr>
+                        <th>Year</th>
+                        <th>month</th>
+                        <th>Date_of_month</th>
+                        <th>day_of_week</th>
+                        <th>births</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="p-1">2000</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">6</td>
+                        <td class="p-1">9083</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3">2000</td>
+                        <td class="p-3">1</td>
+                        <td class="p-3">2</td>
+                        <td class="p-3">7</td>
+                        <td class="p-3">8006</td>
+                    </tr>
+                    <tr>
+                        <td class="p-1">2000</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">6</td>
+                        <td class="p-1">9083</td>
+                    </tr>
+                    <tr>
+                        <td class="p-1">2000</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">3</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">11363</td>
+                    </tr>
+                    <tr>
+                        <td class="p-1">2000</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">4</td>
+                        <td class="p-1">2</td>
+                        <td class="p-1">13032</td>
+                    </tr>
+                    <tr>
+                        <td class="p-1">2000</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">5</td>
+                        <td class="p-1">3</td>
+                        <td class="p-1">12558</td>
+                    </tr>
+                    <tr>
+                        <td class="p-1">2000</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">6</td>
+                        <td class="p-1">4</td>
+                        <td class="p-1">12466</td>
+                    </tr>
+                    <tr>
+                        <td class="p-1">2000</td>
+                        <td class="p-1">1</td>
+                        <td class="p-1">7</td>
+                        <td class="p-1">5</td>
+                        <td class="p-1">12516</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </header>
+   <hr color="white"/>
+    <!-- Data Analytics Report -->
+    <section id="data-statistics" class="col-10 mx-auto mb-5">
+        <h6 class="text-center" style="color: rgb(200, 224, 211);">
+            Statistical Analysis Of The Data.
+        </h6>
+        <div class="d-lg-flex d-sm-block">
+            <div class="col-lg-3 col-sm-6 mb-3 mx-sm-auto">
+                <table class="table-bordered mx-auto" style="color: wheat;">
+                    <thead class="text-center">
+                        <tr>
+                            <th>Analysis</th>
+                            <th>births</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr>
+                            <td>Mean Per Month</td>
+                            <td>11350.068261</td>
+                        </tr>
+                        <tr>
+                            <td>Standard Deviation</td>
+                            <td>2325.821049</td>
+                        </tr>
+                        <tr>
+                            <td>Min Value</td>
+                            <td>2325.821049</td>
+                        </tr>
+                        <tr>
+                            <td>Max Value</td>
+                            <td>16081.000000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card col-lg-3 col-sm-6 mb-3 d-flex mx-auto justify-content-center align-items-center">
+                <h6 class="text-center" style="color: teal;">Total Births<br><span style="color: tomato;font-size: 30px;">62187024</span></h6>
+            </div>
+            <div class="card col-lg-3 col-sm-6 mb-3 justify-content-center align-items-center">
+                <h6 class="text-center" style="color: teal;">Year With Highest Births<br>Year 2007<br>
+                    <span style="color: tomato;font-size: 30px;">4380784</span></h6>
+            </div>
+        </div>
+    </section>
+    <hr color="white"/>
+
+    <!-- Charts Section -->
+
+    <div class="charts d-flex align-items-center justify-content-center">
+        <div id="barh" class="col-6 text-center">
+            <!-- Totals Per Year Representation -->
+            <h6 style="color: rgb(200, 224, 211);">
+                Barh Representation Of data per year
+            </h6>
+        </div>
+        <div id="bar" class="col-6 text-center">
+            <!-- Totals Per Month -->
+            <h6 style="color: rgb(200, 224, 211);">
+                Bar Representation Of data per Month
+            </h6>
+        </div>
+    </div>
+    <hr color="white"/>
+
+    <div class="d-flex align-items-center justify-content-center">
+        <div id="density" class="col-6 text-center">
+            <!-- 2000 -->
+            <h6 style="color: rgb(200, 224, 211);">
+                Density Reprentation Of data In The year 2000
+            </h6>
+        </div>
+        <div id="lollipop" class="col-6 text-center">
+            <!-- 2004 -->
+            <h6 style="color: rgb(200, 224, 211);">
+                lollipop Showing the data distribution In 2004
+            </h6>
+        </div>
+    </div>
+    <hr color="white"/>
+
+    <section id="conclusion" class="col-lg-10 col-sm-12 mx-auto">
+        <p class="lead">
+            From the data Analysis,It can be clearly seen that:
+            <ol class="col-lg-8 col-sm-12">
+                <li>Births Were drastically decreasing between 2008-2014. After careful research it has be concluded the following were the reasons:
+                        <ul class="list-group" style="color: turquoise;">
+                            <li class="list-group-item">Employement of Birth Control</li>
+                            <li class="list-group-item">Economic Constrains</li>
+                            <li class="list-group-item">Marriage At late Age</li>
+                            <li class="list-group-item">Government Policies</li>
+                        </ul>
+                </li>
+                <li>Births were increasing systematically between 2000 and 2014,The research conducted on the reason behind the growth are:
+                    <ul class="list-group" style="color: turquoise;">
+                        <li class="list-group-item">Birth Control was believed to cause diseases like cancer</li>
+                        <li class="list-group-item">The Economy by that time was favourable.</li>
+                        <li class="list-group-item">Early pregnacies were highly registered</li>
+                        <li class="list-group-item">The goverment had promised to give support after a certain number of children</li>
+                    </ul>
+            </li>
+            </ol>
+        </p>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./scripts/barh.js"></script>
+    <script src="./scripts/bar.js"></script>
+    <script src="./scripts/density.js"></script>
+</body>
+
+
+
+
+
+
+
+

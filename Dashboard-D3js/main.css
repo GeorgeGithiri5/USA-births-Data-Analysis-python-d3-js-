@@ -1,0 +1,13 @@
+body{
+    color: white;
+}
+.list-group{
+    width: 100% !important;
+}
+.charts{
+    overflow-x: scroll;
+}
+
+@media only screen and (max-width:720px){
+    
+}
